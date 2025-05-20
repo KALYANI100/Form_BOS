@@ -22,6 +22,10 @@ mongoose.connect(process.env.MONGO_URI, {
 .then(() => console.log('MongoDB connected'))
 .catch(err => console.error('MongoDB error:', err));
 
+app.get('/', (req, res) => {
+  res.send('Backend is live!');
+});
+
 // Route: Get Feedback Form by ID
 app.get('/api/feedback/form/:id', async (req, res) => {
     console.log(req.params.id);
