@@ -1,7 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
-import FeedbackForm from './models/FeedbackForm.js';
+import FeedbackForm from './models/FeedBackForm.js';
 import FeedbackResponse from './models/FeedBackResponse.js';
 import dotenv from 'dotenv';
 dotenv.config();
